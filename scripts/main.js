@@ -176,6 +176,21 @@ let movieSchedule = [
         <img src="${movie.poster}"/>
         </section>`
     }
+    
+  }
+
+  
+// build an HTML representation of each movie, and insert it into the #movie-schedule container in the DOM.
+
+// You can use any elements you like in your HTML string as long as all the data in the movieSchedule object is included.
+
+// Movie Schedule
+
+// let movieSchedule = [
+//     {
+//       title: "Ralph Breaks the Internet",
+//       rating: "PG",
+//       cu
   }
 // build an HTML representation of each movie, and insert it into the #movie-schedule container in the DOM.
 
