@@ -117,3 +117,66 @@ sandwichList()
 // Use document.querySelector and .innerHTML to print your HTML string to the "#sandwich-container".
 
 // Call the function. You should see a bulleted list of all the sandwich toppings in the DOM.
+
+
+// Movie Schedule
+
+let movieSchedule = [
+    {
+      title: "Ralph Breaks the Internet",
+      rating: "PG",
+      currentlyPlaying: true,
+      poster: "https://lumiere-a.akamaihd.net/v1/images/r_ralphbreakstheinternet_header_ddt-17403_08ef6d92.jpeg?region=0,0,1024,1274&optimize=true"
+    },
+    {
+      title: "The Grinch",
+      rating: "G",
+      currentlyPlaying: true,
+      poster: "https://images-na.ssl-images-amazon.com/images/I/71vgX4VFdiL._SY679_.jpg"
+    },
+    {
+      title: "A Star is Born",
+      rating: "R",
+      currentlyPlaying: false,
+      poster: "https://images-na.ssl-images-amazon.com/images/I/718zWbDKmvL._SY606_.jpg"
+    },
+     {
+      title: "Bohemian Rhapsody",
+      rating: "PG-13",
+      currentlyPlaying: true,
+      poster: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Bohemian_Rhapsody_poster.png/220px-Bohemian_Rhapsody_poster.png"
+    },
+    {
+      title: "Fantastic Beasts: The Crimes of Grindlewald",
+      rating: "PG-13",
+      currentlyPlaying: true,
+      poster: "https://images-na.ssl-images-amazon.com/images/I/716fk%2BBZ-NL._SY606_.jpg"
+    },
+    {
+      title: "Robin Hood",
+      rating: "PG-13",
+      currentlyPlaying: false,
+      poster: "https://images-na.ssl-images-amazon.com/images/I/61K%2BTyGjsCL.jpg"
+    },
+    {
+      title: "Spider-Man: Into the Spider-Verse",
+      rating: "PG-13",
+      currentlyPlaying: true,
+      poster: "https://i.pinimg.com/564x/7a/dc/4f/7adc4fb12c2b64ea4066d04e3d0769cc.jpg"
+    }
+  ]
+
+//   Use a for loop to loop through the movies, 
+  for(let movie of movieSchedule){
+    if (movie.currentlyPlaying){
+        document.querySelector('#movie-schedule').innerHTML +=
+        `<section>
+        <h1>${movie.title}</h1>
+        <p>Rated ${movie.rating}</p>
+        <img src="${movie.poster}"/>
+        </section>`
+    }
+  }
+// build an HTML representation of each movie, and insert it into the #movie-schedule container in the DOM.
+
+// You can use any elements you like in your HTML string as long as all the data in the movieSchedule object is included.
